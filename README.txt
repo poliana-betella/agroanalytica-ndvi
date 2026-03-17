@@ -1,32 +1,40 @@
-Plugin Builder Results
+Agroanalytica NDVI (NDVI DatVeg)
+Este repositório contém um plugin para o QGIS desenvolvido para facilitar a extração e o processamento de séries temporais de vegetação. 
+A ferramenta utiliza a integração com a plataforma Satveg para obter dados de índices de vegetação de forma automatizada.
 
-Your plugin NdviSatveg was created in:
-    C:\Users\polia\AppData\Roaming\QGIS\QGIS3\profiles\default\python\plugins\ndvi_datveg
+!!!!!IMPORTANTE!!!!!! 
+Configuração de Acesso
+Para que o plugin funcione, o usuário precisa obrigatoriamente CRIAR UMA CONTA/API para acessar a plataforma Satveg. 
+Após obter as credenciais, é necessário abrir o arquivo config.py dentro da pasta do plugin e ATUALIZAR AS INFORMAÇÕES DE ACESSO.
 
-Your QGIS plugin directory is located at:
-    C:/Users/polia/AppData/Roaming/QGIS/QGIS3/profiles/default/python/plugins
+FUNCIONALIDADES
 
-What's Next:
+Conexão Satveg: 
+Interface direta para busca de dados de séries temporais.
 
-  * Copy the entire directory containing your new plugin to the QGIS plugin
-    directory
+Visualização: 
+- Ferramentas para análise de perfis temporais de áreas agrícolas. 
+- Faixas de cores para facilitar análise.
+- Plota a área que represanta a área de extração do pixel.
+- Janela dinâmica com memória de tamanho e último local que esteve.
+- Visualização do valor do NDVI e da data de forma dinâmica
 
-  * Compile the resources file using pyrcc5
+Ativação: 
+- Ativa ao clicar no ícone da ferramenta.
+- Possível de ativar e desativar com a tecla de atalho "n". 
+- Também desativa ao clicarmos em outra ferramenta.
 
-  * Run the tests (``make test``)
+INSTALAÇÃO
+Baixe este repositório como um arquivo .zip.
+No QGIS, vá em Complementos > Gerenciar e Instalar Complementos.
+Selecione Instalar a partir de ZIP e aponte para o arquivo baixado.
 
-  * Test the plugin by enabling it in the QGIS plugin manager
+ESTRUTURA DO PROJETO
+Satveg/: Módulos de integração com a plataforma.
+NDVI_DATVeg.py: Lógica principal do plugin.
+resources.qrc: Arquivos de ícones e recursos visuais.
+config.py: Local onde está as credenciais de API a serem atualizadas
 
-  * Customize it by editing the implementation file: ``NDVI_DATVeg.py``
-
-  * Create your own custom icon, replacing the default icon.png
-
-  * Modify your user interface by opening NdviSatveg_dockwidget_base.ui in Qt Designer
-
-  * You can use the Makefile to compile your Ui and resource files when
-    you make changes. This requires GNU make (gmake)
-
-For more information, see the PyQGIS Developer Cookbook at:
-http://www.qgis.org/pyqgis-cookbook/index.html
-
-(C) 2011-2018 GeoApt LLC - geoapt.com
+DESENVOLVEDORAS
+Poliana Cursino Betella
+Eliandra Pereira da Silva

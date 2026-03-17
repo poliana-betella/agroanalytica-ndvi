@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# QGIS compilados
+*.qm
+resources.py
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+Satveg/BR_Municipios_2021.gpkg

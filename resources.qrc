@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/plugins/NDVI_DATVeg" >
+        <file>icon.png</file>
+    </qresource>
+</RCC>

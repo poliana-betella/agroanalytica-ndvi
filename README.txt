@@ -29,6 +29,11 @@ Baixe este repositório como um arquivo .zip.
 No QGIS, vá em Complementos > Gerenciar e Instalar Complementos.
 Selecione Instalar a partir de ZIP e aponte para o arquivo baixado.
 
+IMPORTANTE: o arquivo resources.py (gerado a partir de resources.qrc) nao e versionado neste repositorio (ver .gitignore). Antes de empacotar/instalar o plugin, compile-o com: pyrcc5 -o resources.py resources.qrc
+
+DEPENDENCIAS
+Alem das bibliotecas ja incluidas no QGIS (PyQt5, qgis.core, qgis.gui), e necessario ter matplotlib, requests e python-dateutil disponiveis no Python usado pelo QGIS (ver requirements.txt).
+
 ESTRUTURA DO PROJETO
 Satveg/: Módulos de integração com a plataforma.
 NDVI_DATVeg.py: Lógica principal do plugin.

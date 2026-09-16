@@ -6,13 +6,13 @@
 name=NDVI-SATVeg
 qgisMinimumVersion=3.0
 description=Gera uma curva NDVI para a área de interesse
-version=1.0
+version=1.0.0
 author=Eliandra Silva e Poliana Betella
 
 about=Gera uma curva NDVI para a área de interesse.
 
-tracker=http://bugs
-repository=http://repo
+tracker=https://github.com/poliana-betella/agroanalytica-ndvi/issues
+repository=https://github.com/poliana-betella/agroanalytica-ndvi
 # End of mandatory metadata
 
 # Recommended items:
@@ -24,7 +24,7 @@ hasProcessingProvider=no
 # Tags are comma separated with spaces allowed
 tags=analysis, landscape, web
 
-homepage=http://homepage
+homepage=https://github.com/poliana-betella/agroanalytica-ndvi
 category=Plugins
 icon=icon.png
 # experimental flag

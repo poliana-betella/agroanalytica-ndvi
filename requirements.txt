@@ -1,0 +1,6 @@
+# Dependencias externas ao ambiente QGIS.
+# PyQt5, qgis.core e qgis.gui ja sao fornecidos pela instalacao do QGIS
+# e nao devem ser instalados via pip.
+matplotlib>=3.5
+requests>=2.25
+python-dateutil>=2.8
